@@ -1,28 +1,21 @@
 ![Screenshot](screenshot-1.png)
-![Screenshot](screenshot-2.png)
-![Screenshot](screenshot-3.png)
 
 ## Overview ##
 
-This is a modular extension for [graphiques-digitale/silverstripe-seo-facebook-insights](https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-insights)
+This is a modular extension for [graphiques-digitale/silverstripe-seo-metadata](https://github.com/Graphiques-Digitale/silverstripe-seo-metadata)
 
-It enables [Facebook Insights](https://developers.facebook.com/docs/platforminsights/domains) ~ `fb:app_id` and `fb:admins`
+It enables [Facebook Domain Insights](https://developers.facebook.com/docs/platforminsights/domains) i.e. `fb:app_id` and `fb:admins`
 
 It requires:
 * [`Metadata`](https://github.com/Graphiques-Digitale/silverstripe-seo-metadata)
 
 It is intended to be used alongside it's siblings:
 * [`Icons`](https://github.com/Graphiques-Digitale/silverstripe-seo-icons)
-* [`Authorship`](https://github.com/Graphiques-Digitale/silverstripe-seo-authorship)
 * [`Open Graph`](https://github.com/Graphiques-Digitale/silverstripe-seo-open-graph)
 * [`Twitter Cards`](https://github.com/Graphiques-Digitale/silverstripe-seo-twitter-cards)
 * [`Schema.org`](https://github.com/Graphiques-Digitale/silverstripe-seo-schema-dot-org)
 
 These are all optional and fragmented from the alpha version [`SSSEO`](https://github.com/Graphiques-Digitale/SSSEO), which is now redundant.
-
-The whole module bunch is based largely on [18 Meta Tags Every Webpage Should Have in 2013][1].
-
-Also, a good overview: [5 tips for SEO with Silverstripe 3][2].
 
 ## Installation ##
 
@@ -36,32 +29,41 @@ Also, a good overview: [5 tips for SEO with Silverstripe 3][2].
 * Place the extracted folder `silverstripe-seo-facebook-domain-insights-{version}` into `silverstripe-seo-facebook-domain-insights` in the SilverStripe webroot
 * run `~/dev/build/?flush`
 
+## CMS Usage ##
+
+@todo explain usage
+
 ## Template Usage ##
 
 Depending on your configuration, the general idea is to replace all header content relating to metadata with `$Metadata()` just below the opening `<head>` tag and `$BaseHref()` function, e.g.:
 
 ```html
 <head>
-<% base_tag %>
-$Metadata()
-<!-- further includes ~ viewport, etc. -->
-<!-- however, really don't include CSS & JS here ~ do it in the *_Controller of this class -->
+    <% base_tag %>
+    $Metadata()
+    <!-- further includes ~ viewport, etc. -->
 </head>
 ```
 
 This will output something along the lines of:
 
 ```html
-<!-- SEO -->
-<!-- Metadata -->
-<meta charset="UTF-8" />
-<link rel="canonical" href="http://dev.seo.silverstripe.org/" />
-<title>Your Site Name | Home - your tagline here</title>
-<meta name="description" content="Welcome to SilverStripe! This is the default home page. You can edit this page by opening the CMS. You can now access the developer documentation, or begin the tutorials." />
-<!-- Facebook Insights -->
-<meta property="fb:app_id" content="FacebookAppID123" />
-<meta property="fb:admins" content="AuthorFacebookProfileID123" />
-<!-- END SEO -->
+<head>
+    <base href="http://dev.seo.silverstripe.org/"><!--[if lte IE 6]></base><![endif]-->
+
+    <!-- SEO -->
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <link rel="canonical" href="http://dev.seo.silverstripe.org/" />
+    <title>Your Site Name | Home - your tagline here</title>
+    <meta name="description" content="Welcome to SilverStripe! This is the default home page. You can edit this page by opening the CMS. You can now access the developer documentation, or begin the tutorials." />
+    <!-- Facebook Insights -->
+    <meta property="fb:app_id" content="FacebookAppID123" />
+    <meta property="fb:admins" content="AuthorFacebookProfileID123" />
+    <!-- END SEO -->
+
+    <!-- further includes ~ viewport, etc. -->
+</head>
 ```
 
 ## Issue Tracker ##
@@ -76,6 +78,9 @@ Please get in touch @ [`hello@graphiquesdigitale.net`](mailto:hello@graphiquesdi
 
 MIT License
 
+![Screenshot](screenshot-2.png)
+
+![Screenshot](screenshot-3.png)
 
 
 [1]: https://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
