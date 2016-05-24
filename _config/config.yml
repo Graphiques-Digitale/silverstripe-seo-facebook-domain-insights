@@ -1,18 +1,16 @@
 ---
-Name: 'SEO_FacebookInsights'
+Name: 'SEO_FacebookDomainInsights'
 Before:
   - '#SEO_Metadata'
-  - '#SEO_Icons'
-  - '#SEO_Authorship'
 ---
 SiteConfig:
   extensions:
-    - 'SEO_FacebookInsights_SiteConfig_DataExtension'
+    - 'SEO_FacebookDomainInsights_SiteConfig_DataExtension'
 
 SiteTree:
   extensions:
-    - 'SEO_FacebookInsights_SiteTree_DataExtension'
+    - 'SEO_FacebookDomainInsights_SiteTree_DataExtension'
 
 Member:
   extensions:
-    - 'SEO_FacebookInsights_Member_DataExtension'
+    - 'SEO_FacebookDomainInsights_Member_DataExtension'

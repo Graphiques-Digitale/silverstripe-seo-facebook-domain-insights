@@ -1,15 +1,15 @@
 {
-  "name": "graphiques-digitale/silverstripe-seo-authorship",
   "description": "Authorship module for the SilverStripe framework",
+  "name": "graphiques-digitale/silverstripe-seo-facebook-domain-insights",
   "type": "silverstripe-module",
-  "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-icons",
   "keywords": ["silverstripe", "seo", "metadata", "module", "search engine", "optimisation", "optimization", "authorship", "author", "Publisher"],
   "license": "BSD-3-Clause",
+  "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights",
   "authors": [
     {"name": "Andrew Gerber","email": "atari@graphiquesdigitale.net"}
   ],
   "support": {
-    "issues": "http://github.com/graphiques-digitale/silverstripe-seo-authorship/issues"
+    "issues": "http://github.com/graphiques-digitale/silverstripe-seo-facebook-domain-insights/issues"
   },
   "require": {
     "silverstripe/cms": "~3.1",
@@ -17,7 +17,7 @@
     "graphiques-digitale/silverstripe-seo-metadata": "dev/master"
   },
   "extra": {
-    "installer-name": "silverstripe-seo-icons",
+    "installer-name": "silverstripe-seo-facebook-domain-insights",
     "screenshots": [
       "screenshot-1.png",
       "screenshot-2.png",

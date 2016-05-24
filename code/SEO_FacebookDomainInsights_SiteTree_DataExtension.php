@@ -1,20 +1,16 @@
 <?php
 
 /**
- * SEO_FacebookInsights_SiteTree_DataExtension
- *
- * @todo add description
+ * @todo Adds Facebook Domain Insights output to SiteTree.
  *
  * @package silverstripe-seo
- * @subpackage facebook-insights
+ * @subpackage facebook-domain-insights
  * @author Andrew Gerber <atari@graphiquesdigitale.net>
  * @version 1.0.0
  *
- * @todo lots
- *
  */
 
-class SEO_FacebookInsights_SiteTree_DataExtension extends DataExtension {
+class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 
 
 	/* Overload Variable
@@ -34,13 +30,14 @@ class SEO_FacebookInsights_SiteTree_DataExtension extends DataExtension {
 	------------------------------------------------------------------------------*/
 
 	/**
-	 * @name Metadata
+	 * @param SiteConfig $config
+	 * @param SiteTree $owner
+	 * @param string $metadata
+	 *
+	 * @return string
+	 *
 	 */
-	public function updateMetadata(&$metadata, $owner, $config) {
-
-		// variables
-// 		$config = SiteConfig::current_site_config();
-// 		$owner = $this->owner;
+	public function updateMetadata(SiteConfig $config, SiteTree $owner, &$metadata) {
 
 		// Facebook App ID
 		if ($config->FacebookAppID) {

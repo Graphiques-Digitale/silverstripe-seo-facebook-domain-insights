@@ -1,27 +1,23 @@
 <?php
 
 /**
- * SEO_FacebookInsights_SiteConfig_DataExtension
- *
- * @todo add description
+ * @todo Adds Facebook Domain Insights settings to SiteConfig.
  *
  * @package silverstripe-seo
- * @subpackage facebook-insights
+ * @subpackage facebook-domain-insights
  * @author Andrew Gerber <atari@graphiquesdigitale.net>
  * @version 1.0.0
  *
- * @todo lots
- *
  */
 
-class SEO_FacebookInsights_SiteConfig_DataExtension extends DataExtension {
+class SEO_FacebookDomainInsights_SiteConfig_DataExtension extends DataExtension {
 
 
 	/* Overload Model
 	------------------------------------------------------------------------------*/
 
 	private static $db = array(
-		'FacebookAppID' => 'Varchar(128)',
+		'FacebookAppID' => 'Varchar(16)',
 	);
 	private static $has_many = array(
 		'FacebookAdmins' => 'Member',
@@ -39,11 +35,12 @@ class SEO_FacebookInsights_SiteConfig_DataExtension extends DataExtension {
 
 		//// Facebook Insights
 
-		$tab = 'Root.SEO.FacebookInsights';
+		// tab
+		$tab = 'Root.SEO.FacebookDomainInsights';
 
-		// add
+		// add fields
 		$fields->addFieldsToTab($tab, array(
-			TextField::create('FacebookAppID', 'Facebook Application ID'),
+			TextField::create('FacebookAppID', 'Facebook Application ID'), // @todo validation
 			GridField::create('FacebookAdmins', 'Facebook Administrators', $owner->FacebookAdmins())
 				->setConfig(GridFieldConfig_RelationEditor::create())
 		));

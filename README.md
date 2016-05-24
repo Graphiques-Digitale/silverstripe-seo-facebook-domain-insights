@@ -28,12 +28,12 @@ Also, a good overview: [5 tips for SEO with Silverstripe 3][2].
 
 ### Composer ###
 
-* `composer require graphiques-digitale/silverstripe-seo-facebook-insights`
+* `composer require graphiques-digitale/silverstripe-seo-facebook-domain-insights`
 * run `~/dev/build/?flush`
 
 ### From ZIP ###
 
-* Place the extracted folder `silverstripe-seo-facebook-insights-{version}` into `silverstripe-seo-facebook-insights` in the SilverStripe webroot
+* Place the extracted folder `silverstripe-seo-facebook-domain-insights-{version}` into `silverstripe-seo-facebook-domain-insights` in the SilverStripe webroot
 * run `~/dev/build/?flush`
 
 ## Template Usage ##
@@ -66,7 +66,7 @@ This will output something along the lines of:
 
 ## Issue Tracker ##
 
-Issues are tracked on GitHub @ [Issue Tracker](https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-insights/issues)
+Issues are tracked on GitHub @ [Issue Tracker](https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights/issues)
 
 ## Development and Contribution ##
 
