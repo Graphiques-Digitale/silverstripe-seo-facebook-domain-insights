@@ -72,6 +72,10 @@ Issues are tracked on GitHub @ [Issue Tracker](https://github.com/Graphiques-Dig
 
 Please get in touch @ [`hello@graphiquesdigitale.net`](mailto:hello@graphiquesdigitale.net) if you have any extertise in any of these SEO module's areas and would like to help ~ they're a lot to maintain.
 
+## License ##
+
+MIT License
+
 
 
 [1]: https://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013

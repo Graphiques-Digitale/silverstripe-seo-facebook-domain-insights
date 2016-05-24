@@ -5,6 +5,7 @@
   "keywords": ["silverstripe", "seo", "metadata", "module", "search engine", "optimisation", "optimization", "authorship", "author", "Publisher"],
   "license": "BSD-3-Clause",
   "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights",
+  "license": "MIT",
   "authors": [
     {"name": "Andrew Gerber","email": "atari@graphiquesdigitale.net"}
   ],
