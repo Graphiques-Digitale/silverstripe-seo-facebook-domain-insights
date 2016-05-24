@@ -1,20 +1,33 @@
 {
-  "description": "Authorship module for the SilverStripe framework",
   "name": "graphiques-digitale/silverstripe-seo-facebook-domain-insights",
+  "description": "Module for adding Facebook Domain Insights to SilverStripe.",
   "type": "silverstripe-module",
-  "keywords": ["silverstripe", "seo", "metadata", "module", "search engine", "optimisation", "optimization", "authorship", "author", "Publisher"],
-  "license": "BSD-3-Clause",
   "homepage": "https://github.com/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights",
+  "keywords": [
+    "silverstripe",
+    "metadata",
+    "module",
+    "seo",
+    "search",
+    "engine",
+    "optimisation",
+    "optimization",
+    "facebook",
+    "domain",
+    "insights"
+  ],
   "license": "MIT",
   "authors": [
-    {"name": "Andrew Gerber","email": "atari@graphiquesdigitale.net"}
+    {
+      "name": "Andrew Gerber","email": "atari@graphiquesdigitale.net"
+    }
   ],
   "support": {
     "issues": "http://github.com/graphiques-digitale/silverstripe-seo-facebook-domain-insights/issues"
   },
   "require": {
-    "silverstripe/cms": "~3.1",
-    "silverstripe/framework": "~3.1",
+    "silverstripe/cms": "3.*",
+    "silverstripe/framework": "3.*",
     "graphiques-digitale/silverstripe-seo-metadata": "dev/master"
   },
   "extra": {
