@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo Adds Facebook Domain Insights settings to SiteConfig.
+ * Adds Facebook Domain Insights settings to SiteConfig.
  *
  * @package silverstripe-seo
  * @subpackage facebook-domain-insights

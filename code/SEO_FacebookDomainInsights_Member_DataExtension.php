@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo Adds Facebook Domain Insight data to Member.
+ * Adds Facebook Domain Insight data to Member.
  *
  * @package silverstripe-seo
  * @subpackage facebook-domain-insights
