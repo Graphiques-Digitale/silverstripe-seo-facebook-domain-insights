@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @todo Adds Facebook Domain Insights output to SiteTree.
+ * Adds Facebook Domain Insights output to SiteTree.
  *
  * @package silverstripe-seo
  * @subpackage facebook-domain-insights
@@ -42,7 +42,7 @@ class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 		// Facebook App ID
 		if ($config->FacebookAppID) {
 
-			$metadata .= $owner->MarkupHeader('Facebook Insights');
+			$metadata .= $owner->MarkupComment('Facebook Insights');
 			$metadata .= $owner->MarkupFacebook('fb:app_id', $config->FacebookAppID, false);
 
 			// Admins (if App ID)
