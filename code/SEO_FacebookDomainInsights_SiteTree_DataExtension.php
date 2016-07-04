@@ -9,50 +9,51 @@
  * @version 1.0.0
  *
  */
-
-class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
-
-
-	/* Overload Model
-	------------------------------------------------------------------------------*/
-
-	// none
+class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension
+{
 
 
-	/* Overload Methods
-	------------------------------------------------------------------------------*/
+    /* Overload Model
+    ------------------------------------------------------------------------------*/
 
-	// none
+    // none
 
 
-	/* Template Methods
-	------------------------------------------------------------------------------*/
+    /* Overload Methods
+    ------------------------------------------------------------------------------*/
 
-	/**
-	 * @param SiteConfig $config
-	 * @param SiteTree $owner
-	 * @param string $metadata
-	 *
-	 * @return void
-	 *
-	 */
-	public function updateMetadata(SiteConfig $config, SiteTree $owner, &$metadata) {
+    // none
 
-		// Facebook App ID
-		if ($config->FacebookAppID) {
 
-			$metadata .= $owner->MarkupComment('Facebook Insights');
-			$metadata .= $owner->MarkupFacebook('fb:app_id', $config->FacebookAppID, false);
+    /* Template Methods
+    ------------------------------------------------------------------------------*/
 
-			// Admins (if App ID)
-			foreach ($config->FacebookAdmins() as $admin) {
-				if ($admin->FacebookProfileID) {
-					$metadata .= $owner->MarkupFacebook('fb:admins', $admin->FacebookProfileID, false);
-				}
-			}
+    /**
+     * @param SiteConfig $config
+     * @param SiteTree $owner
+     * @param string $metadata
+     *
+     * @return void
+     *
+     */
+    public function updateMetadata(SiteConfig $config, SiteTree $owner, &$metadata)
+    {
 
-		}
+        // Facebook App ID
+        if ($config->FacebookAppID) {
 
-	}
+            $metadata .= $owner->MarkupComment('Facebook Insights');
+            $metadata .= $owner->MarkupFacebook('fb:app_id', $config->FacebookAppID, false);
+
+            // Admins (if App ID)
+            foreach ($config->FacebookAdmins() as $admin) {
+                if ($admin->FacebookProfileID) {
+                    $metadata .= $owner->MarkupFacebook('fb:admins', $admin->FacebookProfileID, false);
+                }
+            }
+
+        }
+
+    }
 
 }

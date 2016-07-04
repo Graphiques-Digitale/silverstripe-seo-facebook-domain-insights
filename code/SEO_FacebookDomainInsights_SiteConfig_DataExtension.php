@@ -9,42 +9,43 @@
  * @version 1.0.0
  *
  */
-
-class SEO_FacebookDomainInsights_SiteConfig_DataExtension extends DataExtension {
-
-
-	/* Overload Model
-	------------------------------------------------------------------------------*/
-
-	private static $db = array(
-		'FacebookAppID' => 'Varchar(16)',
-	);
-	private static $has_many = array(
-		'FacebookAdmins' => 'Member',
-	);
+class SEO_FacebookDomainInsights_SiteConfig_DataExtension extends DataExtension
+{
 
 
-	/* Overload Methods
-	------------------------------------------------------------------------------*/
+    /* Overload Model
+    ------------------------------------------------------------------------------*/
 
-	// CMS Fields
-	public function updateCMSFields(FieldList $fields) {
+    private static $db = array(
+        'FacebookAppID' => 'Varchar(16)',
+    );
+    private static $has_many = array(
+        'FacebookAdmins' => 'Member',
+    );
 
-		// owner
-		$owner = $this->owner;
 
-		//// Facebook Insights
+    /* Overload Methods
+    ------------------------------------------------------------------------------*/
 
-		// tab
-		$tab = 'Root.Metadata.FacebookDomainInsights';
+    // CMS Fields
+    public function updateCMSFields(FieldList $fields)
+    {
 
-		// add fields
-		$fields->addFieldsToTab($tab, array(
-			TextField::create('FacebookAppID', 'Facebook Application ID'), // @todo validation
-			GridField::create('FacebookAdmins', 'Facebook Administrators', $owner->FacebookAdmins())
-				->setConfig(GridFieldConfig_RelationEditor::create())
-		));
+        // owner
+        $owner = $this->owner;
 
-	}
+        //// Facebook Insights
+
+        // tab
+        $tab = 'Root.Metadata.FacebookDomainInsights';
+
+        // add fields
+        $fields->addFieldsToTab($tab, array(
+            TextField::create('FacebookAppID', 'Facebook Application ID'), // @todo validation
+            GridField::create('FacebookAdmins', 'Facebook Administrators', $owner->FacebookAdmins())
+                ->setConfig(GridFieldConfig_RelationEditor::create())
+        ));
+
+    }
 
 }
