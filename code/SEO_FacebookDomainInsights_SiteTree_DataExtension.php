@@ -33,7 +33,7 @@ class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 	 * @param SiteTree $owner
 	 * @param string $metadata
 	 *
-	 * @return string
+	 * @return void
 	 *
 	 */
 	public function updateMetadata(SiteConfig $config, SiteTree $owner, &$metadata) {
@@ -52,9 +52,6 @@ class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 			}
 
 		}
-
-		// return
-		return $metadata;
 
 	}
 
