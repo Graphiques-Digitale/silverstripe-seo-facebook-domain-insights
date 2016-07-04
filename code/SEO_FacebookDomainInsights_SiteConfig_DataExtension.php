@@ -36,7 +36,7 @@ class SEO_FacebookDomainInsights_SiteConfig_DataExtension extends DataExtension 
 		//// Facebook Insights
 
 		// tab
-		$tab = 'Root.SEO.FacebookDomainInsights';
+		$tab = 'Root.Metadata.FacebookDomainInsights';
 
 		// add fields
 		$fields->addFieldsToTab($tab, array(
