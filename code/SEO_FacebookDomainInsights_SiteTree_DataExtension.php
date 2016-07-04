@@ -13,7 +13,7 @@
 class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 
 
-	/* Overload Variable
+	/* Overload Model
 	------------------------------------------------------------------------------*/
 
 	// none
@@ -22,8 +22,7 @@ class SEO_FacebookDomainInsights_SiteTree_DataExtension extends DataExtension {
 	/* Overload Methods
 	------------------------------------------------------------------------------*/
 
-	// CMS Fields
-// 	public function updateCMSFields(FieldList $fields) {}
+	// none
 
 
 	/* Template Methods
