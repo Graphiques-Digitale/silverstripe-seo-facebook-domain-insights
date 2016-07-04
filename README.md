@@ -13,10 +13,6 @@ It is intended to be used alongside it's siblings:
 * [`Icons`](https://github.com/Graphiques-Digitale/silverstripe-seo-icons)
 * [`Open Graph`](https://github.com/Graphiques-Digitale/silverstripe-seo-open-graph)
 
-[//]: # * [`Twitter Cards`](https://github.com/Graphiques-Digitale/silverstripe-seo-twitter-cards)
-
-[//]: # * [`Schema.org`](https://github.com/Graphiques-Digitale/silverstripe-seo-schema-dot-org)
-
 These are all optional and fragmented from the alpha version [`SSSEO`](https://github.com/Graphiques-Digitale/SSSEO), which is now redundant.
 
 ## Installation ##
