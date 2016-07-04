@@ -12,8 +12,8 @@ It requires:
 It is intended to be used alongside it's siblings:
 * [`Icons`](https://github.com/Graphiques-Digitale/silverstripe-seo-icons)
 * [`Open Graph`](https://github.com/Graphiques-Digitale/silverstripe-seo-open-graph)
-* [`Twitter Cards`](https://github.com/Graphiques-Digitale/silverstripe-seo-twitter-cards)
-* [`Schema.org`](https://github.com/Graphiques-Digitale/silverstripe-seo-schema-dot-org)
+<!--* [`Twitter Cards`](https://github.com/Graphiques-Digitale/silverstripe-seo-twitter-cards)-->
+<!--* [`Schema.org`](https://github.com/Graphiques-Digitale/silverstripe-seo-schema-dot-org)-->
 
 These are all optional and fragmented from the alpha version [`SSSEO`](https://github.com/Graphiques-Digitale/SSSEO), which is now redundant.
 
@@ -22,16 +22,20 @@ These are all optional and fragmented from the alpha version [`SSSEO`](https://g
 ### Composer ###
 
 * `composer require graphiques-digitale/silverstripe-seo-facebook-domain-insights`
-* run `~/dev/build/?flush`
+* rebuild using `/dev/build/?flush`
 
 ### From ZIP ###
 
 * Place the extracted folder `silverstripe-seo-facebook-domain-insights-{version}` into `silverstripe-seo-facebook-domain-insights` in the SilverStripe webroot
-* run `~/dev/build/?flush`
+* rebuild using `/dev/build/?flush`
 
 ## CMS Usage ##
 
-@todo explain usage
+The Facebook App ID is set globally via `/admin/settings/` under the Metadata tab.
+
+Facebook Admins are added by adding `Members`/users to the at the same location above.
+
+Admin IDs are set against the actual users on their `/admin/security/` page.
 
 ## Template Usage ##
 
