@@ -9,37 +9,38 @@
  * @version 1.0.0
  *
  */
+class SEO_FacebookDomainInsights_Member_DataExtension extends DataExtension
+{
 
-class SEO_FacebookDomainInsights_Member_DataExtension extends DataExtension {
+    /* Overload Variable
+     ------------------------------------------------------------------------------*/
 
-	/* Overload Variable
-	 ------------------------------------------------------------------------------*/
-
-	private static $db = array(
-		'FacebookProfileID' => 'Varchar(16)',
-	);
-	private static $has_one = array(
-		'FacebookAdmin' => 'SiteConfig',
-	);
+    private static $db = array(
+        'FacebookProfileID' => 'Varchar(16)',
+    );
+    private static $has_one = array(
+        'FacebookAdmin' => 'SiteConfig',
+    );
 
 
-	/* Overload Methods
-	------------------------------------------------------------------------------*/
+    /* Overload Methods
+    ------------------------------------------------------------------------------*/
 
-	// updateCMSFields
-	public function updateCMSFields(FieldList $fields) {
+    // updateCMSFields
+    public function updateCMSFields(FieldList $fields)
+    {
 
-		// configuration
-		$tab = 'Root.SEO';
+        // configuration
+        $tab = 'Root.SEO';
 
-		// author
-		$fields->addFieldsToTab($tab, array(
-			TextField::create('FacebookProfileID', 'Facebook Profile ID') // @todo validation
-		));
+        // author
+        $fields->addFieldsToTab($tab, array(
+            TextField::create('FacebookProfileID', 'Facebook Profile ID') // @todo validation
+        ));
 
-		// remove FacebookAdmin from user profile
-		$fields->removeByName('FacebookAdminID');
+        // remove FacebookAdmin from user profile
+        $fields->removeByName('FacebookAdminID');
 
-	}
+    }
 
 }
