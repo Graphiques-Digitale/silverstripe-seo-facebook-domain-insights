@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights.svg?branch=master)](https://travis-ci.org/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Graphiques-Digitale/silverstripe-seo-facebook-domain-insights/?branch=master)
 
-![Screenshot](screenshot-1.png)
-
 ## Overview ##
 
 This is a modular extension for [graphiques-digitale/silverstripe-seo-metadata](https://github.com/Graphiques-Digitale/silverstripe-seo-metadata)
@@ -84,6 +82,8 @@ BSD-3-Clause license
 
 See @ [Why BSD?][12]
 
+
+![Screenshot](screenshot-1.png)
 
 ![Screenshot](screenshot-2.png)
 
