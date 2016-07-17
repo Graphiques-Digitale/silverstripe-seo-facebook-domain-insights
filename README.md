@@ -78,7 +78,10 @@ Please get in touch @ [`hello@graphiquesdigitale.net`](mailto:hello@graphiquesdi
 
 ## License ##
 
-MIT License
+BSD-3-Clause license
+
+See @ [Why BSD?][12]
+
 
 ![Screenshot](screenshot-2.png)
 
@@ -96,3 +99,4 @@ MIT License
 [9]: https://dev.twitter.com/cards/overview
 [10]: https://developers.google.com/+/web/snippet/
 [11]: https://mathiasbynens.be/notes/touch-icons
+[12]: https://www.silverstripe.org/blog/why-bsd/
